@@ -15,9 +15,9 @@
     <string name="button_some_hard">Biraz Zor</string>
     <string name="button_very_hard">Çok Zor</string>
     <string name="button_sideBySide">Yan yana</string>
-    <string name="button_topButtom">Alt alta</string>        
-    <string name="button_startPlaying">Haydi Başlayalım</string>        
-    <string name="button_settings">Ayarlar</string>        
-    
+    <string name="button_topButtom">Alt alta</string>
+    <string name="button_startPlaying">Haydi Başlayalım</string>
+    <string name="button_settings">Ayarlar</string>
+    <string name="title_activity_blackboard">MyBlackboard</string>
 
 </resources>
