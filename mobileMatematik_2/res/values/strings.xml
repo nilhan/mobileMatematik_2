@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mobileMatematik</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="button_add">+</string>
+    <string name="button_substract">-</string>
+    <string name="button_multiply">x</string>
+    <string name="button_divide">/</string>
+    <string name="edit_message">İşlem Tipi</string>
+    <string name="button_veryEasy">Çocuk Oyuncağı</string>
+    <string name="button_easy">Kolay</string>
+    <string name="button_medium">Orta</string>
+    <string name="button_some_hard">Biraz Zor</string>
+    <string name="button_very_hard">Çok Zor</string>
+    <string name="button_sideBySide">Yan yana</string>
+    <string name="button_topButtom">Alt alta</string>        
+    <string name="button_StartPlaying">Haydi Başlayalım</string>        
+    <string name="button_Settings">Ayarlar</string>        
+    
+
+</resources>
