@@ -37,15 +37,15 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040000;
-        public static final int button_Settings=0x7f040010;
-        public static final int button_StartPlaying=0x7f04000f;
         public static final int button_add=0x7f040003;
         public static final int button_divide=0x7f040006;
         public static final int button_easy=0x7f040009;
         public static final int button_medium=0x7f04000a;
         public static final int button_multiply=0x7f040005;
+        public static final int button_settings=0x7f040010;
         public static final int button_sideBySide=0x7f04000d;
         public static final int button_some_hard=0x7f04000b;
+        public static final int button_startPlaying=0x7f04000f;
         public static final int button_substract=0x7f040004;
         public static final int button_topButtom=0x7f04000e;
         public static final int button_veryEasy=0x7f040008;
