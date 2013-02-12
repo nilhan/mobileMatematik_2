@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+  
+    
+    <!--  EditText
+        android:id="@+id/edit_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/edit_message"
+        android:text="işlem tipi" / -->
+
+    <Button
+        android:id="@+id/button_add"
+        style="@style/AppTheme"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_add"
+        android:onClick="button_add_clicked" />
+
+    <Button
+        android:id="@+id/button_substract"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_substract" 
+        android:onClick="button_subtract_clicked" />
+
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_multiply" 
+        android:onClick="button_multiply_clicked" />
+
+    <Button
+        android:id="@+id/button_divide"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_divide" 
+        android:onClick="button_divide_clicked" />
+
+    <Button
+        android:id="@+id/button_veryEasy"
+        style="@style/AppTheme"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_veryEasy" 
+        android:onClick="button_veryEasy_clicked" />
+    <Button
+        android:id="@+id/button_easy"
+        style="@style/AppTheme"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_easy" 
+        android:onClick="button_easy_clicked" />
+    <Button
+        android:id="@+id/button_medium"
+        style="@style/AppTheme"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="160dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_medium" 
+        android:onClick="button_medium_clicked" />
+    <Button
+        android:id="@+id/button_some_hard"
+        style="@style/AppTheme"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="220dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_some_hard" 
+        android:onClick="button_someHard_clicked" />
+    <Button
+        android:id="@+id/button_very_hard"
+        style="@style/AppTheme"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="290dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_very_hard" 
+        android:onClick="button_veryHard_clicked" />
+    
+    <Button
+        android:id="@+id/button_sideBySide"
+        style="@style/AppTheme"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sideBySide" 
+        android:onClick="button_sideBySide_clicked" />
+    
+    <Button
+        android:id="@+id/button_topButtom"
+        style="@style/AppTheme"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="170dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_topButtom" 
+        android:onClick="button_topButtom_clicked" />
+
+    <Button
+        android:id="@+id/button_StartPlaying"
+        style="@style/AppTheme"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="250dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_startPlaying" 
+        android:onClick="button_startPlaying_clicked" />
+
+    <Button
+        android:id="@+id/button_Settings"
+        style="@style/AppTheme"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_settings" />
+    
+              
+   
+
+</RelativeLayout>
