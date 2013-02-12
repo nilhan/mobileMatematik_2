@@ -30,10 +30,12 @@ public final class R {
         public static final int menu_settings=0x7f07000d;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_blackboard=0x7f030000;
+        public static final int activity_main=0x7f030001;
     }
     public static final class menu {
-        public static final int activity_main=0x7f060000;
+        public static final int activity_blackboard=0x7f060000;
+        public static final int activity_main=0x7f060001;
     }
     public static final class string {
         public static final int app_name=0x7f040000;
@@ -53,6 +55,7 @@ public final class R {
         public static final int edit_message=0x7f040007;
         public static final int hello_world=0x7f040001;
         public static final int menu_settings=0x7f040002;
+        public static final int title_activity_blackboard=0x7f040011;
     }
     public static final class style {
         /** 
