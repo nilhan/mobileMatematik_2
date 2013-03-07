@@ -1,5 +1,7 @@
 package com.example.mobilematematik;
 
+import java.util.Random;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -12,8 +14,10 @@ public class BlackboardActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blackboard);
-        // Show the Up button in the action bar.
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        Random random = new Random();
+        int firstNumber = random.nextInt(15);
+        
+
     }
     
     @Override

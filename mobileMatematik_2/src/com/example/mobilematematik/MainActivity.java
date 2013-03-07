@@ -1,6 +1,7 @@
 package com.example.mobilematematik;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,6 +13,10 @@ import com.example.type.OperationType;
 import com.example.type.ProsessType;
 
 public class MainActivity extends Activity {
+    public final static String OPERATION_TYPE = "com.example.mobilematematik.OPERATION_TYPE";
+    public final static String LEVEL_TYPE = "com.example.mobilematematik.LEVEL_TYPE";
+    public final static String PROSESS_TYPE = "com.example.mobilematematik.PROSESS_TYPE";
+    
     OperationType operationType;
     LevelType     levelType;
     ProsessType   prosessType;
@@ -166,6 +171,15 @@ public class MainActivity extends Activity {
         b.setBackgroundColor(Color.RED);
         b = (Button) findViewById(R.id.button_sideBySide);
         b.setBackgroundColor(Color.LTGRAY);
+    }
+    
+    public void button_startPlaying_clicked(View view) {
+        Intent intent = new Intent(this, BlackboardActivity.class);
+        intent.putExtra(OPERATION_TYPE, operationType);
+        intent.putExtra(LEVEL_TYPE, levelType);
+        intent.putExtra(PROSESS_TYPE, prosessType);
+        startActivity(intent);
+        
     }
     
 }

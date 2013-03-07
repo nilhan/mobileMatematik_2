@@ -19,5 +19,8 @@
     <string name="button_startPlaying">Haydi Başlayalım</string>
     <string name="button_settings">Ayarlar</string>
     <string name="title_activity_blackboard">MyBlackboard</string>
+    <string name="buttunOk">OK</string>
+    <string name="firstNumberValue">347</string>
+    <string name="secondNumberValue">123</string>
 
 </resources>
