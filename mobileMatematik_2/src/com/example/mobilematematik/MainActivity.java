@@ -8,23 +8,24 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.number.RandomNumberGenerator;
 import com.example.type.LevelType;
 import com.example.type.OperationType;
 import com.example.type.ProsessType;
+import com.example.util.Constants;
 
 public class MainActivity extends Activity {
-    public final static String OPERATION_TYPE = "com.example.mobilematematik.OPERATION_TYPE";
-    public final static String LEVEL_TYPE = "com.example.mobilematematik.LEVEL_TYPE";
-    public final static String PROSESS_TYPE = "com.example.mobilematematik.PROSESS_TYPE";
     
     OperationType operationType;
     LevelType     levelType;
     ProsessType   prosessType;
+    RandomNumberGenerator randomNumberGenerator;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        randomNumberGenerator = new RandomNumberGenerator();
     }
     
     @Override
@@ -175,9 +176,10 @@ public class MainActivity extends Activity {
     
     public void button_startPlaying_clicked(View view) {
         Intent intent = new Intent(this, BlackboardActivity.class);
-        intent.putExtra(OPERATION_TYPE, operationType);
-        intent.putExtra(LEVEL_TYPE, levelType);
-        intent.putExtra(PROSESS_TYPE, prosessType);
+        intent.putExtra(Constants.OPERATION_TYPE, operationType);
+        intent.putExtra(Constants.LEVEL_TYPE, levelType);
+        intent.putExtra(Constants.PROSESS_TYPE, prosessType);
+        intent.putExtra(Constants.RANDOM_NUMBER_GENERATOR, randomNumberGenerator);
         startActivity(intent);
         
     }

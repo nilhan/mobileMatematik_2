@@ -1,18 +1,24 @@
 package com.example.number;
 
-public class RandomNumberGenerator implements IRandomNumberGenerator{
+import java.io.Serializable;
+import java.util.Random;
 
-    @Override
-    public int generateRandomNumber() {
-        // TODO random number generator implement edilecek.
-        return 0;
-        
-    }
+import com.example.type.LevelType;
+
+public class RandomNumberGenerator implements IRandomNumberGenerator, Serializable{
+
+    Random random = new Random();
 
     @Override
     public int generateRandomNumberLessThanInputParam(int numbeber) {
         // TODO Auto-generated method stub
         return 0;
+    }
+
+    @Override
+    public int generateRandomNumber(LevelType leveltype) {
+        // TODO Auto-generated method stub
+        return random.nextInt(200);
     }
     
 }

@@ -2,13 +2,22 @@ package com.example.mobilematematik;
 
 import java.util.Random;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.support.v4.app.NavUtils;
+import android.widget.ImageView;
+
+import com.example.number.OperationNumbers;
+import com.example.number.RandomNumberGenerator;
+import com.example.type.LevelType;
+import com.example.type.OperationType;
+import com.example.util.Constants;
 
 public class BlackboardActivity extends Activity {
+    RandomNumberGenerator randomNumberGenerator;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +26,38 @@ public class BlackboardActivity extends Activity {
         Random random = new Random();
         int firstNumber = random.nextInt(15);
         
-
+        Intent intent = getIntent();
+        OperationType operationType = (OperationType)intent.getExtras().get(Constants.OPERATION_TYPE);
+        setOPerationTypePicture(intent,operationType);
+        
     }
+    private void generateArbitraryNumbers(Intent intent,OperationType operationType){
+        LevelType levelType = (LevelType)intent.getExtras().get(Constants.LEVEL_TYPE);
+        OperationNumbers numbers = new OperationNumbers(randonGenerator, operationType, levelType)
+        
+    }
+    
+    private void setOPerationTypePicture(Intent intent, OperationType operationType) {
+        //set the operation icon
+        ImageView imageView =  (ImageView)findViewById(R.id.imageViewOperation);
+        switch (operationType) {
+            case ADD:
+                imageView.setImageResource(R.drawable.ic_sum);
+                break;
+            case SUBTRACT:
+                imageView.setImageResource(R.drawable.ic_minus);
+                break;
+            case MULTIPLY:
+                imageView.setImageResource(R.drawable.ic_multiply);
+                break;
+            case DIVIDE:
+                imageView.setImageResource(R.drawable.ic_divide);
+                break;
+            default:
+                break;
+        }
+    }
+    
     
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
